@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+ --Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+--right-color:hsl(179,47%,52%);
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Karla",sans-serif;
+    font-size: 16px;
+    background-color:var(--Light-Gray);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+main{
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px  10px rgba(0,0,0,0.0.05);
+    overflow: hidden;
+}
+section{
+    padding: 35px;
+}
+.cyan{
+    background-color: var(--Cyan);
+    color: white;
+}
+.greyish-blue{
+    background-color: var(--right-color);
+     color: white;
+}
+.row{
+    display: flex;
+}
+.row > section {
+    flex:1;
+}
+h1{
+    color: var(--Cyan);
+    font-size: 34px;
+}
+.yellow-text{
+    color: var(--Bright-Yellow);
+}
+p{
+    font-size:18px;
+}
+p.faded{
+   color:hsl(179, 43%, 75%);
+   display: flex;
+   align-items: center;
+}
+p.faded span{
+    color: white;
+    font-size:50px;
+    margin-right: 10px;
+}
+p.light-black{
+    color:#999;
+    margin:7px;
+}
+button{
+    background-color: var(--Bright-Yellow);
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    padding:20px 0;
+    width: 100%;
+    border:none;
+    font-family: "Karla",sans-serif;
+    font-weight:700;
+    margin-top:15px;
+     box-shadow: 0 5px 10px  10px rgba(0,0,0,0.0.05);
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    opacity: 0.7;
+  
+}
+ul li{
+    line-height: 28px;
+    
+}
+@media screen and (max-width:500px){
+    .row{
+        flex-direction: column;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+
